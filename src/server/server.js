@@ -31,10 +31,17 @@ app.use(helmet());
 app.use(mongoSanitize());
 
 // CORS configuration
+// CORS configuration
+const allowedOrigins = [
+  "https://mini-project-final-2-5p2o.onrender.com", // Frontend URL on Render
+  "http://localhost:3000", // Local Vite frontend (optional)
+];
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || process.env.CLIENT_URL || 'http://localhost:3000',
-  credentials: true
+  origin: allowedOrigins,
+  credentials: true,
 }));
+
 
 // Rate limiting
 const limiter = rateLimit({
