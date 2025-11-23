@@ -21,6 +21,7 @@ export const config = {
     configUrl: getEnvVar('VITE_BOTPRESS_CONFIG_URL', 'https://files.bpcontent.cloud/2025/11/09/17/20251109173139-QPZXD221.json'),
   },
 } as const;
+console.log("🚀 VITE_API_URL Loaded:", config.apiUrl);
 
 // For backwards compatibility
 export const API_URL = config.apiUrl;
