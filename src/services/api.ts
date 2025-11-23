@@ -1,7 +1,5 @@
 // API Configuration and Helper Functions
-import { config } from '../config';
-
-const API_URL = config.apiUrl;
+import { API_URL } from '../config';
 
 // Get auth token from localStorage
 const getToken = (): string | null => {
