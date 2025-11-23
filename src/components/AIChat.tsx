@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Home } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
-import { config } from '../config';
+import { API_URL } from '../config';
 
 export function AIChat() {
   const { user } = useAuth();
