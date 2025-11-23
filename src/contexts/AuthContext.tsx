@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { authAPI, userAPI } from '../services/api';
 import { toast } from 'sonner';
-import { cleanupBotpress, initializeBotpress } from '../utils/botpress';
+// import { cleanupBotpress, initializeBotpress } from '../utils/botpress';
 
 interface User {
   _id: string;
